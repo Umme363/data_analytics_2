@@ -1,0 +1,212 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMe8Kg9wAjiruEKYuLxN20o",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Umme363/data_analytics_2/blob/main/Python%20hw\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qT76slf9_gO1"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3XlIP9Vf_hnT"
+      },
+      "source": [
+        "1. What is Python and why is it useful?\n",
+        "        \n",
+        "\n",
+        "   Python is a high level programming language. Python is used for AI,   maching learning, operating system etc. "
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UM1qL-ungM5Q"
+      },
+      "source": [
+        "2. Are the following variable names allowed in python?\n",
+        "1_message - not allowed,\n",
+        "Greeting_message - allowed,\n",
+        "Message_1 - allowed,\n",
+        "First name - not allowed,\n",
+        "Full_name - allowed,\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t5bt6uXFhyQl",
+        "outputId": "44640774-2711-47ec-d3a9-e948124150eb"
+      },
+      "source": [
+        "var = \"Hello There!\"\n",
+        "print(var)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Hello There!\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vUuSoVwgiL7u",
+        "outputId": "71199eaf-3a72-4fc6-8932-b19304eb48c4"
+      },
+      "source": [
+        "first_name = \"umme\"\n",
+        "last_name = \"habiba\"\n",
+        "email_extension = \"@gmail.com\"\n",
+        "print(first_name+last_name+email_extension)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "ummehabiba@gmail.com\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NZ0XqsFvi9Or",
+        "outputId": "ee27dcad-a051-4971-aae0-c1ffb55599a1"
+      },
+      "source": [
+        "name = \"Umme\"\n",
+        "print(name.lower())\n",
+        "print(name.upper())"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "umme\n",
+            "UMME\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rdGDOPk9jfET",
+        "outputId": "7d0f29ba-78c5-45e8-a00e-3b1ed09816dc"
+      },
+      "source": [
+        "date = 15\n",
+        "var = \"Do you want to hang out on the \" + str(date) +\"th of this month?\"\n",
+        "print(var)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Do you want to hang out on the 15th of this month?\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wmSYRbpmkkAE",
+        "outputId": "1493a0eb-e95b-4778-a8a6-be55138af358"
+      },
+      "source": [
+        "list = [\"sister sister\", \"how I met your mother\", \"the good doctor\", \"the originals\", \"agents of shield\"]\n",
+        "print(list)\n",
+        "list.sort()\n",
+        "print(list)\n",
+        "list.sort(reverse=True)\n",
+        "print(list)\n",
+        "len(list)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['sister sister', 'how I met your mother', 'the good doctor', 'the originals', 'agents of shield']\n",
+            "['agents of shield', 'how I met your mother', 'sister sister', 'the good doctor', 'the originals']\n",
+            "['the originals', 'the good doctor', 'sister sister', 'how I met your mother', 'agents of shield']\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 14
+        }
+      ]
+    }
+  ]
+}
